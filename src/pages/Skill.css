@@ -1,0 +1,89 @@
+.skill-section{
+  background-color: azure;
+  color:#0072b1 ;
+}
+
+.skills-head-1{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;   
+}
+.skill-cards{
+  margin-top: 50px;
+}
+.skill-car-1{
+  margin-top: 40px;
+}
+.skill-para{
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  margin-top: 50px;
+  padding: 0px 70px;
+
+}
+
+
+.skill-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.skill-car-1 {
+  flex: 1 1 calc(33.33% - 20px); 
+  max-width: 350px;
+  min-width: 250px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Hover effect for the card container */
+.skill-car-1:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
+/* Optional: Add a hover effect to the BasicCard itself */
+.skill-car-1:hover .card {
+  transform: scale(1.05); /* Slight zoom effect for BasicCard */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow for BasicCard */
+}
+
+/* Media queries for responsive layout */
+
+/* On medium screens (tablets), show 2 cards per row */
+@media (max-width: 768px) {
+  .skill-car-1 {
+    flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+  }
+  .skill-section{
+    margin-top: 190px;
+  }
+  .skill-container{
+    border: 1px solid azure;
+    background-color: azure;
+  }
+  .skills-head-1{
+    font-size: 23px;
+    padding: 0px 5px;
+  }
+  .skill-para{
+    font-size: 18px;
+  }
+}
+
+/* On small screens (mobile), show 1 card per row */
+@media (max-width: 480px) {
+  .skill-car-1 {
+    flex: 1 1 100%; /* 1 card per row */
+  }
+}
+
+
+

@@ -1,0 +1,130 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: azure;
+  color: #0072b1;
+  font-size: 20px;
+}
+
+.name-head h1 {
+  font-size: 1.8em;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-list-1 {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list-1 li {
+  font-size: 1.2em;
+}
+
+.nav-list-1 li a {
+  color:  #0072b1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+ margin-left: 50px;
+}
+
+.nav-list-1 li a:hover {
+  color: #0072b1;
+}
+
+/* Mobile Menu (Hamburger Icon) */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.menu-icon .line {
+  width: 25px;
+  height: 3px;
+  background-color: #0072b1;
+  transition: transform 0.3s ease;
+}
+
+/* For Mobile View */
+@media (max-width: 768px) {
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: azure;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  }
+
+  .nav-list.open {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  /* Hamburger Animation (cross effect) */
+  .menu-icon.open .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-icon.open .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-icon.open .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .nav-list-1 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-list-1 li {
+    font-size: 0.5rem;
+  }
+
+  .nav-list-1 li a:hover {
+    color: #0073b1c9;
+  }
+}
+
+

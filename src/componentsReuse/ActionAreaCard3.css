@@ -1,0 +1,9 @@
+.ul-card {
+    list-style-type: none; 
+    padding: 0; 
+  }
+  
+  .ul-card li {
+    text-decoration: none; 
+    margin-bottom: 8px; 
+  }

@@ -1,0 +1,65 @@
+.work-heading{
+    text-align: center;
+    background-color: azure;
+    color: #0072b1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+}
+
+.work-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+    background-color: azure;
+  }
+  
+  .work-1 {
+    flex: 1 1 calc(33.33% - 20px); 
+    max-width: 350px;
+    min-width: 250px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+  
+  /* Hover effect for the card container */
+  .work-1:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+  }
+  
+  /* Optional: Add a hover effect to the BasicCard itself */
+  .work-1:hover .card {
+    transform: scale(1.05); /* Slight zoom effect for BasicCard */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow for BasicCard */
+  }
+  
+  /* Media queries for responsive layout */
+  
+  /* On medium screens (tablets), show 2 cards per row */
+  @media (max-width: 768px) {
+    .work-1 {
+      flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+    }
+    .work-heading{
+      margin-top: 200px;
+    }
+    .work-container{
+      border: 1px solid azure;
+      background-color: azure;
+    }
+  }
+  
+  /* On small screens (mobile), show 1 card per row */
+  @media (max-width: 480px) {
+    .work-1 {
+      flex: 1 1 100%; /* 1 card per row */
+    }
+    .work-heading{
+      font-size: 30px;
+    }
+  }
+  

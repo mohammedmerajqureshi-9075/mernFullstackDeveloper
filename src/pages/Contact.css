@@ -1,0 +1,35 @@
+.cont-form{
+background-color: azure;
+border: 1px solid azure;
+}
+.cont-whatsapp{
+    background-color: azure;
+    border: 1px solid azure;
+}
+.cont-email{
+    background-color: azure;
+    border: 1px solid azure;
+}
+.cont-instagram{
+    background-color: azure;
+    border: 1px solid azure;
+}
+.contact-heading{
+    text-align: center;
+    background-color: azure;
+    color: #0072b1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+}
+@media (max-width: 768px) {
+  .contact-heading{
+    margin-top: 200px;
+  }
+  .contact-container{
+    border: 1px solid azure;
+    background-color: azure;
+  }
+  .contact-heading{
+    font-size: 30px;
+  }
+  }
