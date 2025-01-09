@@ -88,5 +88,10 @@
       font-size: 20px;
       margin-bottom: 30px;
     }
+    .card-1, .card-2, .card-3, .card4, .card5, .card6 {
+      width: 500px; /* Increased width of each card */
+     
+    }
+    
   }
   
