@@ -66,21 +66,31 @@ footer {
 }
 
 @media (max-width: 768px) {
+   body{
+    background-color: azure;
+   }
     .footer-head-1 h1 {
-        font-size: 2rem;
+        font-size: 2.7rem;
     }
 
     .footer-list {
         flex-direction: column;
         align-items: center;
+       
+        
     }
-
+li{
+    margin-bottom: 5px;
+    
+}
     .footer-icons {
-        width: 50%;
+        width: 80%;
         font-size: 1.5rem;
+        border: 2px solid black;
+
     }
 
-    .detail-footer {
+     .detail-footer {
         width: 80%;
-    }
+    } 
 }
